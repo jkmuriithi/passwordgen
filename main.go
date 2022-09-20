@@ -9,14 +9,15 @@ import (
 	"strings"
 )
 
-const printable = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+const printable = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXY" +
+	"Z[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
 // Takes in a positive integer length as a command line argument and returns a
 // randomly generated password of that length.
 func main() {
 	// Read command-line args
 	length, err := strconv.Atoi(os.Args[1])
-	if err != nil  {
+	if err != nil {
 		panic("Usage: ./passwordgen password_length")
 	}
 	if length <= 0 {
