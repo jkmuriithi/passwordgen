@@ -18,7 +18,7 @@ func main() {
 	// Read command-line args
 	length, err := strconv.Atoi(os.Args[1])
 	if err != nil {
-		panic("Usage: ./passwordgen password_length")
+		panic("Usage: passwordgen password_length")
 	}
 	if length <= 0 {
 		panic("Error: password_length must be a positive integer")
