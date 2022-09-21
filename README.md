@@ -8,10 +8,9 @@ A tiny CLI tool for generating random passwords.
 ## Running Locally
 Make sure you have a working installation of Go with a proper GOPATH setup. Then, clone the repo and install the tool.
 ```bash
-$ git clone https://github.com/jkmuriithi/passwordgen.git
-$ cd passwordgen
-$ go build
-$ go install
+git clone https://github.com/jkmuriithi/passwordgen.git
+cd passwordgen
+go install
 ```
 
 ## Roadmap
