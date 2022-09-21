@@ -3,7 +3,7 @@
 A tiny CLI tool for generating random passwords.
 
 ## Built With
-- Language: [Go 1.9](https://go.dev/)
+- Language: [Go 1.19](https://go.dev/)
 
 ## Running Locally
 Make sure you have a working installation of Go with a proper GOPATH setup. Then, clone the repo and install the tool.
