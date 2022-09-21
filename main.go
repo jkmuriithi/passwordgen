@@ -30,12 +30,12 @@ func main() {
 	chars := []rune(printable)
 	n := len(chars)
 	for i := 0; i < length; i++ {
-		bigIdx, err := rand.Int(rand.Reader, big.NewInt(int64(n)))
+		idx, err := rand.Int(rand.Reader, big.NewInt(int64(n)))
 		if err != nil {
 			panic(err)
 		}
 
-		pw.WriteRune(chars[bigIdx.Uint64()])
+		pw.WriteRune(chars[idx.Uint64()])
 	}
 
 	fmt.Println(pw.String())
